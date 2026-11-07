@@ -14,6 +14,13 @@
 <div id="app" hidden><div class="tabs" id="tabs"></div><div id="view"></div></div>
 </main>
 <dialog id="dlg"><h2 id="dt"></h2><form id="df"><div id="db"></div><p class="err" id="derr" role="alert"></p><div class="row" style="margin-top:14px"><button class="btn">Save</button><button type="button" class="btn o" id="dc">Cancel</button></div></form></dialog>
+<dialog id="mdlg"><h2 id="mt"></h2>
+<div><label for="mfiles">Add photos</label><input type="file" id="mfiles" accept="image/*" multiple>
+<p class="meta" id="mstat" style="margin:6px 0 0">Select one or many photos. Landscape and portrait are both kept as they are and resized automatically (up to 1600 px on the long side).</p></div>
+<div><label for="myt">Add a YouTube video</label>
+<div class="row"><input id="myt" placeholder="Paste a YouTube link" style="flex:2;min-width:200px"><input id="mcap" placeholder="Caption (optional)" style="flex:1;min-width:140px"><button type="button" class="btn sm" id="myadd">Add video</button></div></div>
+<div id="mlist" class="mgrid"></div>
+<div class="row" style="margin-top:16px"><button type="button" class="btn o" id="mclose">Done</button></div></dialog>
 <div id="toast" role="status"></div>
 <script src="/config.js"></script>
 <script src="js/admin.js"></script></body></html>

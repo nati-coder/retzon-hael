@@ -1,15 +1,15 @@
 const crudModel = require("./crudModel");
 const { HttpError, str, okUrl } = require("../utils/validate");
 
-const cols = ["title", "category", "sermon_date", "length", "video_url", "audio_url", "pdf_url"];
-const urls = ["video_url", "audio_url", "pdf_url"];
+const cols = ["title", "category", "speaker", "scripture", "sermon_date", "length", "video_url", "thumb_url", "audio_url", "pdf_url"];
+const urls = ["video_url", "thumb_url", "audio_url", "pdf_url"];
 
 module.exports = crudModel({
   table: "sermons",
   cols,
-  sel: "id,title,category,to_char(sermon_date,'YYYY-MM-DD') AS sermon_date,length,video_url,audio_url,pdf_url",
+  sel: "id,title,category,speaker,scripture,thumb_url,to_char(sermon_date,'YYYY-MM-DD') AS sermon_date,length,video_url,audio_url,pdf_url",
   order: "sermon_date DESC NULLS LAST, id DESC",
-  publicSql: "SELECT id,title t,category c,to_char(sermon_date,'YYYY-MM-DD') d,length l,video_url v,audio_url a,pdf_url p FROM sermons ORDER BY sermon_date DESC NULLS LAST, id DESC LIMIT 100",
+  publicSql: "SELECT id,title t,category c,speaker sp,scripture sc,thumb_url th,to_char(sermon_date,'YYYY-MM-DD') d,length l,video_url v,audio_url a,pdf_url p FROM sermons ORDER BY sermon_date DESC NULLS LAST, id DESC LIMIT 100",
   validate(body) {
     const d = {};
     for (const k of cols) {
