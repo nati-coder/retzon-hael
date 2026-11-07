@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RETZON HA’EL – Messianic Congregation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header id="top"><div class="bar">
+<a class="brand" href="#home"><img src="assets/logo.webp" alt=""><span>RETZON HA’EL</span></a>
+<button class="menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+<nav id="nav" aria-label="Main">
+<span class="ind" id="navInd" aria-hidden="true"></span>
+<a href="#home">Home</a><a href="#sermons">Weekly Sermons</a><a href="#outreach">Outreach &amp; Ministries</a><a href="#involved">Get Involved</a><a href="#global">Global Impact</a><a href="#contact">Contact</a>
+<a class="btn gold" href="#sermons" data-live><i class="live-dot" aria-hidden="true"></i>Watch Live</a><a class="btn ghost" href="#give">Support Our Mission</a>
+</nav>
+<div class="prog-wrap" aria-hidden="true"><div class="prog" id="prog"></div></div></div></header>
+<div class="scrim" id="scrim" aria-hidden="true"></div>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div><h1>Empowering community, sharing love, bringing hope.</h1>
+<p>Locally and worldwide, Retzon Ha’el is a Messianic congregation feeding families, serving neighbors, and sharing the Word every week.</p>
+<div class="row"><a class="btn gold" href="#sermons">Latest Sermon</a><a class="btn ghost" href="#outreach">Explore Outreach Programs</a></div></div>
+<div class="logo-card"><img src="assets/logo.webp" alt="Retzon Ha’el Messianic Congregation logo: a navy shield with the letter R, gold laurel branches and a white dove"></div>
+</div></section>
+
+<section id="sermons"><div class="wrap">
+<h2>Weekly Sermons</h2><p class="lead">Watch, listen, and take the message home. Every sermon has audio notes and a transcript to download.</p>
+<div class="tags" id="filters" role="group" aria-label="Filter sermons"></div>
+<div class="grid" id="sermonGrid"></div>
+</div></section>
+
+<section id="outreach" class="navy"><div class="wrap">
+<h2>Outreach &amp; Feeding Initiatives</h2><p class="lead">Every week we distribute food, clothing and essentials to neighbors who need them most.</p>
+<div class="gallery">
+<div class="tile" style="--c:#b8741a">Weekly food distribution</div><div class="tile" style="--c:#2f6f8f">Clothing donations</div><div class="tile" style="--c:#6a8f3c">Family food parcels</div><div class="tile" style="--c:#8a4f7d">Household essentials</div></div>
+<div class="stats">
+<div class="stat"><b data-k="meals" data-n="1200">0</b><span>Meals served weekly</span></div>
+<div class="stat"><b data-k="families" data-n="340">0</b><span>Families supported</span></div>
+<div class="stat"><b data-k="vols" data-n="85">0</b><span>Active volunteers</span></div>
+<div class="stat"><b data-k="drives" data-n="6">0</b><span>Open volunteer drives</span></div></div>
+<h3 id="involved">Upcoming volunteer opportunities</h3>
+<div class="grid" id="eventGrid"></div>
+</div></section>
+
+<section id="global"><div class="wrap">
+<h2>Global Impact</h2><p class="lead">Together we reach communities on every inhabited continent.</p>
+<div class="map"><svg viewBox="0 0 800 380" role="img" aria-label="World map showing regions of the support network">
+<g fill="var(--line)"><path d="M90 70l90-20 70 20 20 60-40 50-50 30-30 70-30-20-20-80-50-30z"/><path d="M250 210l60 10 30 70-30 70-40-60z"/><path d="M370 60l70-10 40 30-10 40-60 10-30 40-20-50z"/><path d="M380 150l80-10 50 40-20 90-50 40-40-60z"/><path d="M490 60l160-10 110 40-30 70-90 20-60 50-60-40-40-70z"/><path d="M640 260l80 10 20 50-70 10z"/></g>
+<g><circle class="dot" cx="170" cy="110" r="7"/><circle class="dot p" cx="170" cy="110" r="7"/><circle class="dot" cx="290" cy="270" r="7"/><circle class="dot p" cx="290" cy="270" r="7"/><circle class="dot" cx="420" cy="90" r="7"/><circle class="dot p" cx="420" cy="90" r="7"/><circle class="dot" cx="450" cy="220" r="7"/><circle class="dot p" cx="450" cy="220" r="7"/><circle class="dot" cx="620" cy="110" r="7"/><circle class="dot p" cx="620" cy="110" r="7"/><circle class="dot" cx="700" cy="290" r="7"/><circle class="dot p" cx="700" cy="290" r="7"/></g></svg></div>
+<div class="regions">
+<div><b data-k="regions" data-n="6">0</b>Regions supported</div><div><b data-k="countries" data-n="28">0</b>Countries reached</div><div><b data-k="believers" data-n="2500">0</b>Believers in our network</div><div><b data-k="helped" data-n="15000">0</b>People helped to date</div></div>
+<p class="unity">Supported by a worldwide community of believers united in faith and service.</p>
+</div></section>
+
+<section id="give" class="navy"><div class="wrap split">
+<div><h2>Support Our Mission</h2><p class="lead">Your gift goes straight to feeding and material distribution projects for vulnerable families.</p>
+<ul class="uses"><li>Weekly meals and food parcels</li><li>Clothing and household essentials</li><li>Volunteer drive supplies and transport</li></ul>
+<p class="lead">Gifts are kept private. We never publish donor names.</p></div>
+<div class="give" role="group" aria-label="Giving">
+<div class="seg"><button data-mode="once" aria-pressed="true">One-time project gift</button><button data-mode="monthly" aria-pressed="false">Monthly support</button></div>
+<div class="amts" id="amts"></div>
+<label for="custom">Other amount (USD)</label><input id="custom" type="number" min="1" inputmode="numeric" placeholder="Enter amount">
+<label for="fund">Direct my gift to</label><select id="fund"><option>Where it is needed most</option><option>Weekly food distribution</option><option>Clothing and material donations</option></select>
+<button class="btn gold" style="width:100%;margin-top:18px" id="giveBtn">Give $50</button></div>
+</div></section>
+
+<section id="contact"><div class="wrap split">
+<div><h2>Contact us</h2><p class="lead">Questions, prayer requests, or want to visit? Send us a message and we will reply soon.</p></div>
+<form id="contactForm" class="card" style="padding:22px">
+<label for="cn">Name</label><input id="cn" required autocomplete="name">
+<label for="ce">Email</label><input id="ce" type="email" required autocomplete="email">
+<label for="cm">Message</label><textarea id="cm" rows="4" required></textarea>
+<button class="btn gold" style="margin-top:16px">Send message</button></form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="cols">
+<div><h3>Service times</h3><p id="fSvc"></p></div>
+<div><h3>Find us</h3><p id="fAddr"></p></div>
+<div><h3>Follow</h3><p id="fSoc"></p></div></div>
+<p class="privacy">Privacy: We keep every donor and partner confidential. We share only combined totals and regions, never names. © <span id="yr"></span> Retzon Ha’el.</p>
+</div></footer>
+
+<dialog id="playDlg"><h3 id="pTitle"></h3><div class="player" aria-hidden="true">▶</div><p class="meta" id="pMeta"></p>
+<div class="row" id="pActs" style="margin:0"></div></dialog>
+
+<dialog id="volDlg"><h3>Sign up to volunteer</h3><p class="meta" id="vEvent"></p>
+<form id="volForm"><label for="vn">Full name</label><input id="vn" required autocomplete="name"><label for="ve">Email</label><input id="ve" type="email" required><label for="vp">Phone (optional)</label><input id="vp" type="tel">
+<div class="row"><button class="btn gold">Confirm sign-up</button><button type="button" class="btn line" data-close>Cancel</button></div></form></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="/config.js"></script>
+<script src="js/app.js"></script>
+</body></html>

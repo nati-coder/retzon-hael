@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Admin – Retzon Ha’el</title>
+<link rel="stylesheet" href="css/admin.css"></head><body>
+<header><b>RETZON HA’EL · Admin</b><a class="btn o" href="/" style="text-decoration:none">View site</a><span id="who"></span><button class="btn o" id="out" hidden>Sign out</button></header>
+<main>
+<form id="login" class="card login" hidden>
+ <h1>Sign in</h1>
+ <label for="em">Email</label><input id="em" type="email" autocomplete="username" required>
+ <label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
+ <p class="err" id="lerr" role="alert"></p>
+ <button class="btn" style="width:100%">Sign in</button>
+</form>
+<div id="app" hidden><div class="tabs" id="tabs"></div><div id="view"></div></div>
+</main>
+<dialog id="dlg"><h2 id="dt"></h2><form id="df"><div id="db"></div><p class="err" id="derr" role="alert"></p><div class="row" style="margin-top:14px"><button class="btn">Save</button><button type="button" class="btn o" id="dc">Cancel</button></div></form></dialog>
+<div id="toast" role="status"></div>
+<script src="/config.js"></script>
+<script src="js/admin.js"></script></body></html>
